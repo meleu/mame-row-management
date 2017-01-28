@@ -1,5 +1,5 @@
 # mame-row-management
-Management tool for MAME ROW posts.
+Management tool for MAME ROW posts. **CURRENTLY IT'S A WORK IN PROGRESS!**
 
 ## What is the MAME ROW?
 
