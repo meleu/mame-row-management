@@ -205,7 +205,7 @@ function manage_gamelist_menu() {
     local cmd=(dialogMenu "Manage MAME ROW gamelist $not_implemented"
         1 "Update gamelist with a new round information"
         2 "Edit a previous round information"
-        3 "!!Get gamelist from the github repository"
+        3 "Get gamelist from the github repository"
         4 "!!Send the local gamelist to the github repository"
     )
     while true; do
@@ -222,7 +222,13 @@ function manage_gamelist_menu() {
                 ;;
 
             3)
-                dialogMsg "TODO: download_gamelist"
+                dialogInfo "\n\nGetting the mamerow_gamelist.txt from github repository..."
+                if curl -s "https://raw.githubusercontent.com/meleu/mame-row-management/master/mamerow_gamelist.txt" > "$GAMELIST"; then
+                    update_round_list
+                    dialogMsg "\nThe mamerow_gamelist.txt has been downloaded from the github repository!"
+                else
+                    dialogMsg "\nFailed to download mamerow_gamelist.txt from the github repository\n\nBe sure you are connected to the internet and try again."
+                fi
                 ;;
 
             4)
