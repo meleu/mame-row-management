@@ -7,14 +7,14 @@ File Name;Game Title;Rpi 1 Status;Rpi 2 Status;Rpi 3 Status;Parent;BIOS;Samples;
 1944;1944: The Loop Master (US 000620);Untested;OK;OK;;;;;2000;Capcom, supported by Eighting/Raizing;
 19xx;19XX: The War Against Destiny (US 951207);Untested;OK;OK;;;;;1996;Capcom;
 2020bb;2020 Super Baseball (set 1);Untested;Untested;OK;;neogeo;;;1991;SNK / Pallas;
-280zzzap;Datsun 280 Zzzap;Untested;Untested;OK;;;;;1976;Midway;
+280zzzap;Datsun 280 Zzzap;Untested;Untested;OK;;;;;1976;Midway;;
 3countb;3 Count Bout / Fire Suplex;Untested;Untested;Untested;;neogeo;;;1993;SNK;
 3kokushi;Sankokushi (Japan);Untested;Untested;Untested;;;;;1996;Mitchell;
 3stooges;The Three Stooges In Brides Is Brides;Untested;Untested;Untested;;;;;1984;Mylstar;
 3wonders;Three Wonders (World 910520);Untested;OK;OK;;;;;1991;Capcom;
 40love;Forty-Love;Untested;Untested;Untested;;;;;1984;Taito Corporation;
 47pie2;Idol Janshi Su-Chi-Pie 2 (v1.1);Untested;Untested;Untested;;;;;1994;Jaleco;
-4dwarrio;4-D Warriors;Untested;Untested;OK;;;;;1985;Coreland / Sega;
+4dwarrio;4-D Warriors;Untested;Untested;OK;;;;;1985;Coreland / Sega;4;https://retropie.org.uk/forum/post/30410
 4enraya;4 En Raya;Untested;OK;Untested;;;;;1990;IDSA;
 4in1;4 Fun in 1;Untested;OK;OK;;;;;1981;Armenia / Food and Fun;
 64street;64th. Street - A Detective Story (World);Untested;OK;OK;;;;;1991;Jaleco;
@@ -31,12 +31,12 @@ actfancr;Act-Fancer Cybernetick Hyper Weapon (World revision 2);Untested;Unteste
 aerofgt;Aero Fighters;Untested;OK;OK;;;;;1992;Video System Co.;
 agallet;Air Gallet;Untested;OK;OK;;;;;1996;Banpresto / Gazelle;
 airbustr;Air Buster;Untested;Untested;Untested;;;;;1990;Kaneko (Namco license);
-airduel;Air Duel (Japan);Untested;Untested;Untested;;;;;1990;Irem;
+airduel;Air Duel (Japan);Untested;Untested;Untested;;;;;1990;Irem;7;https://retropie.org.uk/forum/post/33369
 ajax;Ajax;Untested;OK;Untested;;;;;1987;Konami;
 akiss;Mahjong Angel Kiss;Untested;Untested;Untested;;;;;1995;Jaleco;
 alibaba;Ali Baba and 40 Thieves;Untested;OK;OK;;;;;1982;Sega;
 alien3;Alien? The Gun;Untested;OK;OK;;;;;1993;Sega;
-aliens;Aliens (World set 1);Untested;OK;OK;;;;;1990;Konami;
+aliens;Aliens (World set 1);Untested;OK;OK;;;;;1990;Konami;15;https://retropie.org.uk/forum/post/45430
 aliensyn;Alien Syndrome (set 1);Untested;OK;OK;;;;;1987;Sega;
 alleymas;Alley Master;Untested;Untested;Untested;;;;;1986;Cinematronics;
 alphaho;Alpha Fighter / Head On;Untested;OK;Untested;;;invinco;;;Data East Corporation;
@@ -97,7 +97,7 @@ ballbros;Balloon Brothers;Untested;Untested;OK;;;;;1992;East Technology;
 balonfgt;Vs. Balloon Fight;Untested;Untested;Untested;;;;;1984;Nintendo;
 baluba;Baluba-louk no Densetsu;Untested;Untested;Untested;;;;;1986;Able Corp, Ltd.;
 bananadr;Mahjong Banana Dream [BET] (Japan 891124);Untested;Untested;OK;;;;;1989;Digital Soft;
-bang;Bang!;Untested;Untested;OK;;;;;1998;Gaelco;
+bang;Bang!;Untested;Untested;OK;;;;;1998;Gaelco;;
 bangball;Bang Bang Ball (v1.05);Untested;Untested;OK;;;;;1996;Banpresto / Kunihiko Tashiro+Goodhouse;
 bankp;Bank Panic;Untested;OK;Untested;;;;;1984;[Sanritsu] Sega;
 barricad;Barricade;Untested;Untested;Untested;;;;;1976;RamTek;
@@ -144,7 +144,7 @@ bionicc;Bionic Commando (US set 1);Untested;OK;OK;;;;;1987;Capcom;
 bioship;Bio-ship Paladin;Untested;Untested;Untested;;;;;1990;UPL (American Sammy license);
 birdtry;Birdie Try (Japan);Untested;Untested;Untested;;;;;1988;Data East Corporation;
 bishi;Bishi Bashi Championship Mini Game Senshuken;Untested;Untested;Untested;;;;;1996;Konami;
-bjourney;Blue's Journey / Raguy;Untested;Untested;Untested;;neogeo;;;1990;Alpha Denshi Co.;yes
+bjourney;Blue's Journey / Raguy;Untested;Untested;Untested;;neogeo;;;1990;Alpha Denshi Co.;2;https://retropie.org.uk/forum/post/28476
 bjtwin;Bombjack Twin;Untested;OK;OK;;;;;1993;NMK;
 bking;Birdie King;Untested;Untested;Untested;;;;;1982;Taito Corporation;
 bking2;Birdie King 2;Untested;Untested;Untested;;;;;1983;Taito Corporation;
@@ -190,7 +190,7 @@ bombjack;Bomb Jack (set 1);Untested;OK;OK;;;;;1984;Tehkan;
 bonzeadv;Bonze Adventure (World);Untested;Untested;Untested;;;;;1988;Taito Corporation Japan;
 boomrang;Boomer Rang'r / Genesis;Untested;Untested;Untested;;;;;1983;Data East Corporation;
 borench;Borench;Untested;Untested;Untested;;;;;1990;Sega;
-bosco;Bosconian (new version);Untested;Untested;Untested;;;;;1981;Namco;yes
+bosco;Bosconian (new version);Untested;Untested;Untested;;;;;1981;Namco;1;https://retropie.org.uk/forum/post/27572
 bottom9;Bottom of the Ninth (version T);Untested;Untested;Untested;;;;;1989;Konami;
 bouldash;Boulder Dash / Boulder Dash Part 2 (World);Untested;Untested;Untested;;;;;1990;Data East Corporation (licensed from First Star);
 bounty;The Bounty;Untested;Untested;Untested;;;;;1982;Orca;
@@ -317,12 +317,12 @@ congo;Congo Bongo;Untested;Untested;OK;;;;;1983;Sega;
 contcirc;Continental Circus (World);Untested;Untested;Untested;;;;;1989;Taito Corporation Japan;
 contra;Contra (US);Untested;OK;OK;;;;Slows down a little;1987;Konami;
 cookbib2;Cookie and Bibi 2;Untested;Untested;Untested;;;;;1996;SemiCom;
-cop01;Cop 01 (set 1);Untested;Untested;Untested;;;;;1985;Nichibutsu;
+cop01;Cop 01 (set 1);Untested;Untested;Untested;;;;;1985;Nichibutsu;14;https://retropie.org.uk/forum/post/43357
 copsnrob;Cops'n Robbers;Untested;Untested;Untested;;;;;1976;Atari;
 cosmccop;Cosmic Cop (World);Untested;OK;Untested;;;;;1991;Irem;
 cosmica;Cosmic Alien;Untested;Untested;Untested;;;;;1979;Universal;
 cosmogng;Cosmo Gang the Video (US);Untested;Untested;Untested;;;;;1991;Namco;
-cosmos;Cosmos;Untested;Untested;Untested;;;;;1981;Century Electronics;
+cosmos;Cosmos;Untested;Untested;Untested;;;;;1981;Century Electronics;18;https://retropie.org.uk/forum/post/51252
 cottonbm;Cotton Boomerang;Untested;Untested;Untested;;;;;1998;Success;
 cppicf;Cassette: Peter Pepper's Ice Cream Factory (set 1);Untested;Untested;Untested;;;;;1984;DECO;
 cprobowl;Cassette: Pro Bowling;Untested;Untested;Untested;;;;;1983;DECO;
@@ -560,11 +560,11 @@ fncywld;Fancy World - Earth of Crisis;Untested;Untested;Untested;;;;;1996;Unico;
 fnkyfish;Funky Fish;Untested;Untested;Untested;;;;;1981;Sun Electronics;
 foodf;Food Fight (rev 3);Untested;Untested;OK;;;;sprite turns slower than normal;1982;Atari;
 footchmp;Football Champ (World);Untested;Untested;Untested;;;;;1990;Taito Corporation Japan;
-forgottn;Forgotten Worlds (US);Untested;OK;Untested;;;;;1988;Capcom;
+forgottn;Forgotten Worlds (US);Untested;OK;Untested;;;;;1988;Capcom;10;https://retropie.org.uk/forum/post/37272
 formatz;Formation Z;Untested;Untested;Untested;;;;;1984;Jaleco;
 fourtrax;Four Trax;Untested;Untested;Untested;;;;;1989;Namco;
 freeze;Freeze;Untested;Untested;Untested;;;;;1984;Cinematronics;
-frenzy;Frenzy;Untested;Untested;Untested;;;berzerk;;1982;Stern;
+frenzy;Frenzy;Untested;Untested;Untested;;;berzerk;;1982;Stern;12;https://retropie.org.uk/forum/post/40221
 friskyt;Frisky Tom (set 1);Untested;Untested;Untested;;;;;1981;Nichibutsu;
 frogger;Frogger;Untested;OK;OK;;;;;1981;Konami;
 frogs;Frogs;Untested;Untested;Untested;;;;;1978;Gremlin;
@@ -942,7 +942,7 @@ liberate;Liberation;Untested;Untested;Untested;;;;;1984;Data East Corporation;
 liberatr;Liberator (set 1);Untested;Untested;Untested;;;;;1982;Atari;
 liblrabl;Libble Rabble;Untested;Untested;Untested;;;;;1983;Namco;
 liquidk;Liquid Kids (World);Untested;Untested;Untested;;;;;1990;Taito Corporation Japan;
-lizwiz;Lizard Wizard;Untested;Untested;Untested;;;;;1985;Techstar (Sunn license);
+lizwiz;Lizard Wizard;Untested;Untested;Untested;;;;;1985;Techstar (Sunn license);3;https://retropie.org.uk/forum/post/29442
 lkage;The Legend of Kage;Untested;Untested;Untested;;;;;1984;Taito Corporation;
 llander;Lunar Lander (rev 2);Untested;Untested;Untested;;;;;1979;Atari;
 lnc;Lock'n'Chase;Untested;Untested;Untested;;;;;1981;Data East Corporation;
@@ -1110,7 +1110,7 @@ montecar;Monte Carlo;Untested;Untested;Untested;;;;;1979;Atari;
 monymony;Money Money;Untested;Untested;Untested;;;;;1983;Zaccaria;
 moo;Wild West C.O.W.-Boys of Moo Mesa (World version EA);Untested;OK;Untested;;;;;1992;Konami;
 moonal2;Moon Alien Part 2;Untested;Untested;Untested;;;;;1980;Nichibutsu;
-mooncrst;Moon Cresta (Nichibutsu);Untested;Untested;Untested;;;;;1980;Nichibutsu;
+mooncrst;Moon Cresta (Nichibutsu);Untested;Untested;Untested;;;;;1980;Nichibutsu;11;https://retropie.org.uk/forum/post/38637
 moonqsr;Moon Quasar;Untested;Untested;Untested;;;;;1980;Nichibutsu;
 moonwar;Moonwar;Untested;Untested;Untested;;;;;1981;Stern;
 mosaic;Mosaic;Untested;Untested;Untested;;;;;1990;Space;
@@ -1157,7 +1157,7 @@ myangel2;Kosodate Quiz My Angel 2 (Japan);Untested;Untested;Untested;;;;;1997;Na
 myangel3;Kosodate Quiz My Angel 3 (KQT1/VER.A);Untested;Untested;Untested;;;;;1998;Namco;
 myhero;My Hero (US);Untested;Untested;Untested;;;;;1985;Sega;
 mysticm;Mystic Marathon;Untested;Untested;Untested;;;;;1983;Williams;
-mysticri;Mystic Riders (World);Untested;OK;Untested;;;;;1992;Irem;
+mysticri;Mystic Riders (World);Untested;OK;Untested;;;;;1992;Irem;16;https://retropie.org.uk/forum/post/47090
 mystston;Mysterious Stones - Dr. John's Adventure;Untested;Untested;Untested;;;;;1984;Technos;
 mystwarr;Mystic Warriors (Europe ver EAA);Untested;OK;Untested;;;;;1993;Konami;
 nam1975;NAM-1975;Untested;Untested;Untested;;neogeo;;;1990;SNK;
@@ -1208,7 +1208,7 @@ nomnlnd;No Man's Land;Untested;Untested;Untested;;;;;1980;Universal;
 nost;Nostradamus;Untested;Untested;Untested;;;;;1993;Face;
 nouryoku;Nouryoku Koujou Iinkai;Untested;Untested;Untested;;;;;1995;Tecmo;
 nova2001;Nova 2001 (Japan);Untested;Untested;Untested;;;;;1983;UPL;
-nrallyx;New Rally X;Untested;Untested;Untested;;;rallyx;;1981;Namco;yes
+nrallyx;New Rally X;Untested;Untested;Untested;;;rallyx;;1981;Namco;0;https://retropie.org.uk/forum/post/27050
 nspirit;Ninja Spirit;Untested;Untested;Untested;;;;;1988;Irem;
 nss;Nintendo Super System- BIOS;Untested;Untested;Untested;;;;;;Nintendo;
 nstocker;Night Stocker;Untested;Untested;Untested;;;;;1986;Bally/Sente;
@@ -1255,14 +1255,14 @@ p47aces;P-47 Aces;Untested;Untested;OK;;;;;1995;Jaleco;
 pachiten;Medal Mahjong Pachi-Slot Tengoku [BET] (Japan);Untested;Untested;Untested;;;;;1993;Nichibutsu/MIKI SYOUJI/AV JAPAN;
 pacland;Pac-Land (set 1);Untested;Untested;OK;;;;;1984;Namco;
 pacmania;Pac-Mania;Untested;OK;OK;;;;Fixed! see https://github.com/libretro/mame2003-libretro/issues/22;1987;Namco;
-pacnpal;Pac & Pal;Untested;Untested;Untested;;;;;1983;Namco;
+pacnpal;Pac & Pal;Untested;Untested;Untested;;;;;1983;Namco;8;https://retropie.org.uk/forum/post/34436
 pacplus;Pac-Man Plus;Untested;Untested;;;;;;1982;[Namco] (Midway license);
 paddlema;Paddle Mania;Untested;Untested;Untested;;;;;1988;SNK;
 pairs;Pairs (V1.2, 09/30/94);Untested;Untested;Untested;;;;;1994;Strata/Incredible Technologies;
 pairsten;Pairs (System Ten) (Japan 890826);Untested;Untested;Untested;;;;;1989;System Ten;
 palamed;Palamedes (Japan);Untested;Untested;Untested;;;;;1990;Taito Corporation;
 pandoras;Pandora's Palace;Untested;Untested;Untested;;;;;1984;Konami/Interlogic;
-pang;Pang (World);Untested;OK;OK;;;;;1989;Mitchell;
+pang;Pang (World);Untested;OK;OK;;;;;1989;Mitchell;6;https://retropie.org.uk/forum/post/32424
 pang3;Pang! 3 (Euro 950511);Untested;OK;OK;;;;;1995;Mitchell;
 pangpoms;Pang Poms;Untested;Untested;Untested;;;;;1992;Metro;
 panic;Space Panic (version E);Untested;Untested;OK;;;;Having got samples working yet so there is only a sound when you complete the level, no others;1980;Universal;
@@ -1348,7 +1348,7 @@ pgm;PGM (Polygame Master) System BIOS;Untested;Untested;Untested;;;;;1997;IGS;
 pgoal;Pleasure Goal / Futsal - 5 on 5 Mini Soccer;Untested;Untested;Untested;;neogeo;;;1996;Saurus;
 phantom2;Phantom II;Untested;Untested;Untested;;;;;1979;Midway;
 phelios;Phelios (Japan);Untested;OK;Untested;;;;;1988;Namco;
-phoenix;Phoenix (Amstar);Untested;Untested;Untested;;;;;1980;Amstar;yes
+phoenix;Phoenix (Amstar);Untested;Untested;Untested;;;;;1980;Amstar;0;https://retropie.org.uk/forum/post/25972
 phozon;Phozon (Japan);Untested;Untested;Untested;;;;;1983;Namco;
 pickin;Pickin';Untested;Untested;Untested;;;;;1983;Valadon Automation;
 pignewt;Pig Newton (version C);Untested;Untested;Untested;;;;;1983;Sega;
@@ -1423,7 +1423,7 @@ punisher;The Punisher (World 930422);Untested;OK;OK;;;;;1993;Capcom;
 punkshot;Punk Shot (US 4 Players);Untested;OK;Untested;;;;;1990;Konami;
 pururun;Pururun;Untested;Untested;Untested;;;;;1995;Metro / Banpresto;
 pushman;Pushman;Untested;Untested;Untested;;;;;1990;Comad (American Sammy license);
-puyopuy2;Puyo Puyo 2 (Japan);Untested;Untested;Untested;;;;;1994;Compile (Sega license);
+puyopuy2;Puyo Puyo 2 (Japan);Untested;Untested;Untested;;;;;1994;Compile (Sega license);9;https://retropie.org.uk/forum/post/35801
 puyopuyo;Puyo Puyo (Japan);Untested;Untested;Untested;;;;;1992;Sega / Compile;
 puyosun;Puyo Puyo Sun;Untested;Untested;Untested;;;;;1996;Compile;
 puzlclub;Puzzle Club (Japan prototype);Untested;Untested;OK;;;;;1990;Namco;
@@ -1599,7 +1599,7 @@ scandal;Scandal Mahjong (Japan 890213);Untested;Untested;Untested;;;;;1989;Nichi
 scfinals;Super Cup Finals (World);Untested;Untested;Untested;;;;;1993;Taito Corporation Japan;
 schaser;Space Chaser;Untested;Untested;Untested;;;;;1979;Taito;
 sci;Special Criminal Investigation (World set 1);Untested;Untested;Untested;;;;;1989;Taito Corporation Japan;
-scion;Scion;Untested;Untested;Untested;;;;;1984;Seibu Denshi;
+scion;Scion;Untested;Untested;Untested;;;;;1984;Seibu Denshi;17;https://retropie.org.uk/forum/post/49194
 scobra;Super Cobra;Untested;Untested;Untested;;;;;1981;Konami;
 scontra;Super Contra;Untested;Untested;OK;;;;;1988;Konami;
 scorpnmc;Scorpion (Moon Cresta hardware);Untested;Untested;Untested;;;;;;Dorneer;
@@ -1839,7 +1839,7 @@ stonebal;Stone Ball (4 Players);Untested;Untested;OK;;;;;1994;Art & Magic;
 strahl;Koutetsu Yousai Strahl (Japan set 1);Untested;Untested;Untested;;;;;1992;UPL;
 stratab;Strata Bowling (V3);Untested;Untested;Untested;;;;;1990;Strata/Incredible Technologies;
 stratgyx;Strategy X;Untested;Untested;Untested;;;;;1981;Konami;
-stratof;Raiga - Strato Fighter (US);Untested;Untested;Untested;;;;;1991;Tecmo;
+stratof;Raiga - Strato Fighter (US);Untested;Untested;Untested;;;;;1991;Tecmo;5;https://retropie.org.uk/forum/post/31399
 streakng;Streaking;Untested;Untested;Untested;;;;;1981;Shoei;
 streetsm;Street Smart (US version 2);Untested;Untested;Untested;;;;;1989;SNK;
 strhoop;Street Hoop / Street Slam / Dunk Dream;Untested;Untested;Untested;;neogeo;;;1994;Data East Corporation;
@@ -1864,7 +1864,7 @@ superspy;The Super Spy;Untested;Untested;Untested;;neogeo;;;1990;SNK;
 supertnk;Super Tank;Untested;Untested;Untested;;;;;1981;Video Games GmbH;
 supertr2;Super Triv II;Untested;Untested;Untested;;;;;1986;Status Games;
 superx;Super-X (NTC);Untested;Untested;Untested;;;;;1994;NTC;
-suprglob;Super Glob;Untested;Untested;Untested;;;;;1983;Epos Corporation;
+suprglob;Super Glob;Untested;Untested;Untested;;;;;1983;Epos Corporation;20;https://retropie.org.uk/forum/post/54394
 suprloco;Super Locomotive;Untested;Untested;Untested;;;;;1982;Sega;
 suprslam;Super Slams;Untested;Untested;Untested;;;;;1995;Banpresto / Toei Animation;
 supxevs;Vs. Super Xevious;Untested;Untested;Untested;;;;;1986;Namco;
@@ -1922,7 +1922,7 @@ thehand;The Hand;Untested;Untested;Untested;;;;;1981;T.I.C.;
 thehustl;The Hustler (Japan version M);Untested;Untested;Untested;;;;;1987;Konami;
 themj;The Mah-jong (Japan);Untested;Untested;Untested;;;;;1987;Visco;
 thepit;The Pit;Untested;Untested;OK;;;;;1982;Centuri;
-thief;Thief;Untested;Untested;Untested;;;;;1981;Pacific Novelty;
+thief;Thief;Untested;Untested;Untested;;;;;1981;Pacific Novelty;19;https://retropie.org.uk/forum/post/52802
 thndrx2;Thunder Cross II (Japan);Untested;Untested;Untested;;;;;1991;Konami;
 thndzone;Thunder Zone (World);Untested;Untested;Untested;;;;;1991;Data East Corporation;
 thoop2;TH Strikes Back;Untested;Untested;Untested;;;;;1994;Gaelco;
@@ -2094,7 +2094,7 @@ wacko;Wacko;Untested;Untested;Untested;;;;;1982;Bally Midway;
 wakuwak7;Waku Waku 7;Untested;Untested;Untested;;neogeo;;;1996;Sunsoft;
 wallc;Wall Crash;Untested;Untested;Untested;;;;;1984;Midcoin;
 wallst;Wall Street;Untested;Untested;Untested;;;;;1982;Century Electronics;
-wanted;Wanted;Untested;Untested;Untested;;;;;1984;Sigma Enterprises Inc.;
+wanted;Wanted;Untested;Untested;Untested;;;;;1984;Sigma Enterprises Inc.;13;https://retropie.org.uk/forum/post/41822
 wardner;Wardner (World);Untested;Untested;Untested;;;;;1987;[Toaplan] Taito Corporation Japan;
 warlords;Warlords;Untested;Untested;Untested;;;;;1980;Atari;
 warofbug;War of the Bugs or Monsterous Manouvers in a Mushroom Maze;Untested;Untested;Untested;;;;;1981;Armenia;
