@@ -186,9 +186,10 @@ _EoF_
     echo "$ROUND_LIST" \
     | while read -r entry; do
         round=$(echo "$entry" | cut -d\; -f2)
+        [[ "$round" == "0" ]] && round='-' || round+=.
         game=$(get_game_name $(echo $entry | cut -d\; -f1))
         url=$(echo "$entry" | cut -d\; -f3)
-        echo "$round. [$game]($url)"
+        echo "$round [$game]($url)"
     done >> "$post_file"
 
     dialogMsg "DONE!\n\nThe post content is ready!\n\nJust copy the content of \"$post_file\" file and post it!"
@@ -743,6 +744,7 @@ function get_random_game_numbers() {
 #number=$(sed -n ${j}p numbers.txt)
 # XXX: end of debugging tricks
 
+        dialogInfo "\n\nGetting a random number from random.org..."
         number=$(curl -s "https://www.random.org/integers/?num=1&min=2&max=2185&col=1&base=10&format=plain&rnd=new")
 
         # XXX: I'm not sure if it is enough to detect problems
