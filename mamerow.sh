@@ -8,6 +8,7 @@
 # https://www.random.org/integers/?num=1&min=2&max=2185&col=1&base=10&format=plain&rnd=new
 #
 # TODO:
+# - [DONE] test internet connection
 # - use single letters for the non-random rounds (phoenix and nrallyx)
 # - [DONE]the gamelist integrity checking/fixing must be the first thing this script does
 # - [DONE] MAIN MENU
@@ -152,7 +153,7 @@ function create_new_post() {
         && break
     done
 
-    numbers=( $(get_random_game_numbers) )
+    numbers=( $(get_random_game_numbers) ) || return $?
 
     dialogMsg "\
 The three random games for MAME ROW #$round are:\n\n
@@ -737,6 +738,11 @@ function get_random_game_numbers() {
     local numbers=()
     local i
 
+    if ! curl -Is www.random.org >/dev/null; then
+        dialogMsg "Unable to access www.random.org\n\nBe sure you are connected to the internet and try again."
+        return 1
+    fi
+
 #XXX: debugging
 #j=0
     while [[ "$count" -lt 3 ]]; do
@@ -745,7 +751,7 @@ function get_random_game_numbers() {
 # XXX: end of debugging tricks
 
         dialogInfo "\n\nGetting a random number from random.org..."
-        number=$(curl -s "https://www.random.org/integers/?num=1&min=2&max=2185&col=1&base=10&format=plain&rnd=new")
+        number=$(curl -s "https://www.random.org/integers/?num=1&min=${MIN}&max=${MAX}&col=1&base=10&format=plain&rnd=new")
 
         # XXX: I'm not sure if it is enough to detect problems
         if [[ -z "$number" ]]; then
