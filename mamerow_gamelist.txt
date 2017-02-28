@@ -243,7 +243,7 @@ captaven;Captain America and The Avengers (Asia Rev 1.9);Untested;OK;OK;;;;;1991
 captcomm;Captain Commando (World 911014);Untested;OK;OK;;;;;1991;Capcom;
 carjmbre;Car Jamboree;Untested;Untested;Untested;;;;;1983;Omori Electric Co., Ltd.;
 carnevil;CarnEvil;Untested;Untested;Untested;;;;;1998;Midway Games;
-carnival;Carnival (upright);Untested;Untested;Untested;;;;;1980;Sega;
+carnival;Carnival (upright);Untested;Untested;Untested;;;;;1980;Sega;21;https://retropie.org.uk/forum/post/56243
 carpolo;Car Polo;Untested;Untested;Untested;;;;;1977;Exidy;
 cavelon;Cavelon;Untested;Untested;Untested;;;;;1983;Jetsoft;
 cavenger;Cosmic Avenger;Untested;Untested;Untested;;;;;1981;Universal;
@@ -1658,7 +1658,7 @@ sheriff;Sheriff;Untested;Untested;Untested;;;;;1979;Nintendo;
 shienryu;Shienryu;Untested;Untested;Untested;;;;;1997;Warashi;
 shinobi;Shinobi (set 1);Untested;OK;OK;;;;;1987;Sega;
 shippumd;Shippu Mahou Daisakusen (Japan);Untested;Untested;Untested;;;;;1994;Raizing / Eighting;
-shocking;Shocking;Untested;Untested;Untested;;;;;1997;Yun Sung;
+shocking;Shocking;Untested;Untested;Untested;;;;;1997;Yun Sung;22;https://retropie.org.uk/forum/post/58005
 shocktr2;Shock Troopers - 2nd Squad;Untested;Untested;Untested;;neogeo;;;1998;Saurus;
 shocktro;Shock Troopers (set 1);Untested;Untested;Untested;;neogeo;;;1997;Saurus;
 shollow;Satan's Hollow (set 1);Untested;Untested;Untested;;;;;1981;Bally Midway;
