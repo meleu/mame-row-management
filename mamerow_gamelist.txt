@@ -638,7 +638,7 @@ glfgreat;Golfing Greats;Untested;Untested;Untested;;;;;1991;Konami;
 gmissile;Guided Missile;Untested;Untested;Untested;;;;;1977;Midway;
 goalx3;Goal! Goal! Goal!;Untested;Untested;Untested;;neogeo;;;1995;Visco;
 gogomile;Go Go! Mile Smile;Untested;Untested;Untested;;;;;1995;Fuuki;
-goindol;Goindol (World);Untested;Untested;Untested;;;;;1987;Sun a Electronics;
+goindol;Goindol (World);Untested;Untested;Untested;;;;;1987;Sun a Electronics;23;https://retropie.org.uk/forum/post/59929
 gokuparo;Gokujyou Parodius (ver JAD);Untested;Untested;Untested;;;;;1994;Konami;
 goldbug;Gold Bug;Untested;Untested;Untested;;;;;1982;Century Electronics;
 goldmedl;Gold Medalist;Untested;Untested;OK;;;;;1988;SNK;
