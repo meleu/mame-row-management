@@ -16,12 +16,12 @@
 #   - [DONE] manage gamelist
 #       - [DONE] update with a new round
 #       - [DONE] edit previous round info
-#       - get gamelist from github
+#       - [DONE] get gamelist from github
 #       - send gamelist to github
 #   - [DONE] previous rounds information
 
 readonly GAMELIST_URL="https://raw.githubusercontent.com/meleu/mame-row-management/master/mamerow_gamelist.txt"
-readonly GAMELIST=mamerow_gamelist.txt
+readonly GAMELIST="mamerow_gamelist.txt"
 readonly BACKTITLE="MAME ROW management tool"
 readonly MIN=2
 readonly MAX=2185
@@ -140,6 +140,7 @@ function create_new_post() {
     local round
     local game
     local url
+    local rejected=$(mktemp)
 
     while true; do
         round=$(dialogInput "Do you want to create a post for which MAME ROW round?" "$next_round") || return
@@ -164,6 +165,8 @@ Press <ENTER> to get the link to create the poll."
 
     poll_url="$(create_poll "$round" ${numbers[@]})"
 
+    dialogInfo "\nGenerating the post text..."
+
     # WE HAVE EVERYTHING WE NEED TO CREATE THE POST!!!
     post_file="post-mame-row-$round.md"
 
@@ -179,6 +182,13 @@ The result of the poll is posted on Wednesday, so we have Monday and Tuesday for
 $(show_game_info_f md ${numbers[@]})
 
 _EoF_
+
+    if [[ -s "$rejected" ]]; then
+        echo "**Rejected number(s):**" >> "$post_file"
+        cat "$rejected" >> "$post_file"
+        echo -e "\n" >> "$post_file"
+    fi
+    rm -f "$rejected"
 
     cat text.md >> "$post_file"
 
@@ -223,7 +233,7 @@ function manage_gamelist_menu() {
 
             3)
                 dialogInfo "\n\nGetting the mamerow_gamelist.txt from github repository..."
-                if curl -s "https://raw.githubusercontent.com/meleu/mame-row-management/master/mamerow_gamelist.txt" > "$GAMELIST"; then
+                if "${curlcmd[@]}" -s "https://raw.githubusercontent.com/meleu/mame-row-management/master/mamerow_gamelist.txt" > "$GAMELIST"; then
                     update_round_list
                     dialogMsg "\nThe mamerow_gamelist.txt has been downloaded from the github repository!"
                 else
@@ -492,6 +502,7 @@ function fill_game_data() {
 
 
 function update_round_list() {
+    dialogInfo "\n\nGetting previous rounds info from gamelist..."
     ROUND_LIST=$(
         cut -s -d\; -f 12-13 "$GAMELIST" \
         | grep -vn '\(^$\|^;\)' \
@@ -615,7 +626,6 @@ function check_gamelist_integrity() {
     # from the start of the line, one or more "not-;", followed by ';'
     # followed by one or more digits, followed by ";http"
 
-#    dialog --infobox "Checking gamelist integrity..." 3 40 
     dialogInfo "\n\nChecking gamelist integrity..."
 
     # checking if the round number is a number
@@ -744,7 +754,7 @@ function get_random_game_numbers() {
     local numbers=()
     local i
 
-    if ! curl -Is www.random.org >/dev/null; then
+    if ! "${curlcmd[@]}" -Is www.random.org >/dev/null; then
         dialogMsg "Unable to access www.random.org\n\nBe sure you are connected to the internet and try again."
         return 1
     fi
@@ -757,11 +767,11 @@ function get_random_game_numbers() {
 # XXX: end of debugging tricks
 
         dialogInfo "\n\nGetting a random number from random.org..."
-        number=$(curl -s "https://www.random.org/integers/?num=1&min=${MIN}&max=${MAX}&col=1&base=10&format=plain&rnd=new")
+        number=$("${curlcmd[@]}" -s "https://www.random.org/integers/?num=1&min=${MIN}&max=${MAX}&col=1&base=10&format=plain&rnd=new")
 
         # XXX: I'm not sure if it is enough to detect problems
         if [[ -z "$number" ]]; then
-            dialogMsg "ERROR: unable to get a random number!"
+            dialogMsg "ERROR: unable to get the random number!"
             return 1
         fi
 
@@ -770,7 +780,8 @@ function get_random_game_numbers() {
         # checking if this number was already sorted (really rare condition)
         for i in 0 1 2; do
             [[ "$number" != "${numbers[$i]}" ]] && continue
-            echo "Ignoring \"$number\": repeated number." >&2
+            dialogInfo "Ignoring \"$number\": repeated number."
+            sleep 1
             continue 2
         done
 
@@ -778,16 +789,27 @@ function get_random_game_numbers() {
         game="$(get_game_name $number)"
 
         if [[ -n "$round" ]]; then
-            echo "Ignoring number $number - \"$game\"." >&2
-            echo "This game was chosen on MAME ROW #$round" >&2
+            dialogInfo "Ignoring number $number - \"$game\".\n\nThis game was chosen on MAME ROW #$round"
+            echo "**${number}** - $game: this game was chosen on MAME ROW #$round" >> "$rejected" &
+            sleep 2
             continue
         fi
 
         # checking if it's a Mahjong
         if [[ "$game" =~ [Mm][Aa][Hh][Jj][Oo][Nn][Gg] ]]; then
-            echo "Ignoring number $number - $game: it's a Mahjong game." >&2
+            dialogInfo "Ignoring number $number - $game: it's a Mahjong game."
+            echo "**${number}** - $game: it's a Mahjong game." >> "$rejected" &
+            sleep 1
             continue
         fi
+
+        while true; do
+            if ! dialogYesNo "Do you accept the number $number - ${game}?"; then
+                reason="$(dialogInput "Reason for rejection: ")" || continue
+                echo "**${number}** - $game: $reason." >> "$rejected" &
+            fi
+            break
+        done
 
         numbers+=( "$number" )
         let count+=1
@@ -885,14 +907,16 @@ function create_poll() {
 
 # start here ################################################################
 
+[[ "$(uname)" == CYGWIN* ]] && curlcmd=(curl --proxy-ntlm)
+
 if ! [[ -f "$GAMELIST" ]]; then
     echo "\"$GAMELIST\": file not found!" >&2
     # TODO: try to download the gamelist from $GAMELIST_URL
     exit 1
 fi
 
-update_round_list
-
 check_gamelist_integrity
+
+update_round_list
 
 main_menu
