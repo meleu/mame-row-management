@@ -110,21 +110,10 @@ function main_menu() {
             3 "Previous rounds"
         )
         case "$choice" in
-            1)
-                create_new_post
-                ;;
-
-            2)
-                manage_gamelist_menu
-                ;;
-
-            3)
-                previous_rounds_info
-                ;;
-
-            *)
-                break
-                ;;
+            1)  create_new_post ;;
+            2)  manage_gamelist_menu ;;
+            3)  previous_rounds_info ;;
+            *)  break ;;
         esac
     done
 }
@@ -221,18 +210,15 @@ function manage_gamelist_menu() {
     while true; do
         choice=$("${cmd[@]}")
         case "$choice" in
-            1)
-                update_gamelist
+            1)  update_gamelist
                 ;;
 
-            2)
-                while true; do
+            2)  while true; do
                     edit_previous_round_menu "Edit round information" || break
                 done
                 ;;
 
-            3)
-                dialogInfo "\n\nGetting the mamerow_gamelist.txt from github repository..."
+            3)  dialogInfo "\n\nGetting the mamerow_gamelist.txt from github repository..."
                 if "${curlcmd[@]}" -s "https://raw.githubusercontent.com/meleu/mame-row-management/master/mamerow_gamelist.txt" > "$GAMELIST"; then
                     update_round_list
                     dialogMsg "\nThe mamerow_gamelist.txt has been downloaded from the github repository!"
@@ -241,12 +227,10 @@ function manage_gamelist_menu() {
                 fi
                 ;;
 
-            4)
-                dialogMsg "TODO: send_gamelist"
+            4)  dialogMsg "TODO: send_gamelist"
                 ;;
 
-            *)
-                break
+            *)  break
                 ;;
         esac
     done
